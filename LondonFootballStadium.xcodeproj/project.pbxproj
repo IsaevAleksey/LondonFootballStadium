@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		93B66B2129787EE400D46E65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B66B2029787EE400D46E65 /* AppDelegate.swift */; };
 		93B66B2329787EE400D46E65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B66B2229787EE400D46E65 /* SceneDelegate.swift */; };
-		93B66B2529787EE400D46E65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B66B2429787EE400D46E65 /* ViewController.swift */; };
 		93B66B2829787EE400D46E65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B66B2629787EE400D46E65 /* Main.storyboard */; };
 		93B66B2A29787F1000D46E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93B66B2929787F1000D46E65 /* Assets.xcassets */; };
 		93B66B2D29787F1000D46E65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B66B2B29787F1000D46E65 /* LaunchScreen.storyboard */; };
+		93B66B3529787FB300D46E65 /* StadiumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B66B3429787FB300D46E65 /* StadiumsTableViewController.swift */; };
+		93B66B3729787FBD00D46E65 /* Stadium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B66B3629787FBD00D46E65 /* Stadium.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		93B66B1D29787EE400D46E65 /* LondonFootballStadium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LondonFootballStadium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B66B2029787EE400D46E65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93B66B2229787EE400D46E65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		93B66B2429787EE400D46E65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		93B66B2729787EE400D46E65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93B66B2929787F1000D46E65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93B66B2C29787F1000D46E65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93B66B2E29787F1000D46E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93B66B3429787FB300D46E65 /* StadiumsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumsTableViewController.swift; sourceTree = "<group>"; };
+		93B66B3629787FBD00D46E65 /* Stadium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stadium.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				93B66B2029787EE400D46E65 /* AppDelegate.swift */,
 				93B66B2229787EE400D46E65 /* SceneDelegate.swift */,
-				93B66B2429787EE400D46E65 /* ViewController.swift */,
 				93B66B2629787EE400D46E65 /* Main.storyboard */,
+				93B66B3429787FB300D46E65 /* StadiumsTableViewController.swift */,
+				93B66B3629787FBD00D46E65 /* Stadium.swift */,
 				93B66B2929787F1000D46E65 /* Assets.xcassets */,
 				93B66B2B29787F1000D46E65 /* LaunchScreen.storyboard */,
 				93B66B2E29787F1000D46E65 /* Info.plist */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93B66B2529787EE400D46E65 /* ViewController.swift in Sources */,
 				93B66B2129787EE400D46E65 /* AppDelegate.swift in Sources */,
 				93B66B2329787EE400D46E65 /* SceneDelegate.swift in Sources */,
+				93B66B3529787FB300D46E65 /* StadiumsTableViewController.swift in Sources */,
+				93B66B3729787FBD00D46E65 /* Stadium.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +297,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +306,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = IsaevAleksey.LondonFootballStadium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,8 +328,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +337,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = IsaevAleksey.LondonFootballStadium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
