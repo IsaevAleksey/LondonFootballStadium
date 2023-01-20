@@ -60,9 +60,9 @@
 			children = (
 				93B66B2029787EE400D46E65 /* AppDelegate.swift */,
 				93B66B2229787EE400D46E65 /* SceneDelegate.swift */,
-				93B66B2629787EE400D46E65 /* Main.storyboard */,
 				93B66B3429787FB300D46E65 /* StadiumsTableViewController.swift */,
 				93B66B3629787FBD00D46E65 /* Stadium.swift */,
+				93B66B2629787EE400D46E65 /* Main.storyboard */,
 				93B66B2929787F1000D46E65 /* Assets.xcassets */,
 				93B66B2B29787F1000D46E65 /* LaunchScreen.storyboard */,
 				93B66B2E29787F1000D46E65 /* Info.plist */,
