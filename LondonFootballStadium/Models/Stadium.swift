@@ -7,16 +7,17 @@
 
 import Foundation
 
-struct Stadium: Decodable {
+struct Response: Decodable {
+    let response: [StadiumInfo]
+}
+
+struct StadiumInfo: Decodable {
 
     let name: String
     let address: String
-    let city: String
     let capacity: Int
     let image: String
 
 }
 
-struct Response: Decodable {
-    let response: [Stadium]
-}
+
