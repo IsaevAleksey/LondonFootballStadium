@@ -13,10 +13,7 @@ class StadiumsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         fetchStadiumList()
-
-
     }
 
     // MARK: - Table view data source
@@ -43,8 +40,6 @@ class StadiumsTableViewController: UITableViewController {
         guard let stadiumInfoVC = segue.destination as? StadiumInfoViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         stadiumInfoVC.stadiumInfo = stadiumList[indexPath.row]
-        
-
     }
 }
 
